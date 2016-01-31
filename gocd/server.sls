@@ -58,6 +58,7 @@ go-server-plugins-external-clean:
     - user: {{ gocd.server.user }}
     - group: {{ gocd.server.group }}
     - mode: 644
+    - replace: False
     - watch_in:
       - service: go-server
     - require_in:
