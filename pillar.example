@@ -1,0 +1,12 @@
+gocd:
+  server:
+    plugins:
+        git-fb-poller: https://github.com/ashwanthkumar/gocd-build-github-pull-requests/releases/download/v1.2.3/git-fb-poller-1.2.3.jar
+  agent:
+    config:
+      GO_SERVER: 127.0.0.1
+
+java:
+  env: jre7
+  install:
+    - jre7

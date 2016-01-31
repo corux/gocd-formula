@@ -1,0 +1,10 @@
+{% from 'java/map.jinja' import java with context %}
+{% import_yaml 'gocd/defaults.yaml' as default_settings %}
+{% set gocd = salt['pillar.get']('gocd', default=default_settings.get('gocd'), merge=True) %}
+
+{% do gocd.server.config.update({
+  'JAVA_HOME': java.jre7.home
+}) %}
+{% do gocd.agent.config.update({
+  'JAVA_HOME': java.jre7.home
+}) %}

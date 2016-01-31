@@ -1,0 +1,8 @@
+name: gocd
+os: CentOS, Fedora
+os_family: RedHat
+version: 201601
+release: 1
+dependencies: java
+summary: Formula for installing Go Continuous Delivery Server
+description: Formula for installing Go Continuous Delivery Server and Agent

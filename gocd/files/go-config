@@ -1,0 +1,4 @@
+{% for key, value in config|dictsort -%}
+{{ key }}={{ value }}
+export {{ key }}
+{% endfor %}
