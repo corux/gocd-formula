@@ -8,9 +8,6 @@ gocd:
       SERVER_WORK_DIR: /var/lib/go-server
       DAEMON: Y
       SERVER_STARTUP_ARGS: -Djava.security.egd=file:/dev/./urandom
-    plugins:
-      github-oauth-login: https://github.com/gocd-contrib/gocd-oauth-login/releases/download/v1.2/github-oauth-login-1.2.jar
-      google-oauth-login: https://github.com/gocd-contrib/gocd-oauth-login/releases/download/v1.2/google-oauth-login-1.2.jar
   agent:
     config:
       GO_SERVER: 127.0.0.1

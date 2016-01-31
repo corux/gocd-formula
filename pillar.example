@@ -1,6 +1,8 @@
 gocd:
   server:
     plugins:
+        github-oauth-login: https://github.com/gocd-contrib/gocd-oauth-login/releases/download/v1.2/github-oauth-login-1.2.jar
+        google-oauth-login: https://github.com/gocd-contrib/gocd-oauth-login/releases/download/v1.2/google-oauth-login-1.2.jar
         git-fb-poller: https://github.com/ashwanthkumar/gocd-build-github-pull-requests/releases/download/v1.2.3/git-fb-poller-1.2.3.jar
   agent:
     config:
