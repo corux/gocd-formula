@@ -12,7 +12,7 @@ go-agent-deps:
 go-agent:
   pkg.installed:
     - name: go-agent
-    - fromrepo: gocd-repo
+    - fromrepo: gocd
 
   service.running:
     - name: go-agent

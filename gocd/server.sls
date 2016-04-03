@@ -7,7 +7,7 @@ include:
 go-server:
   pkg.installed:
     - name: go-server
-    - fromrepo: gocd-repo
+    - fromrepo: gocd
 
   service.running:
     - name: go-server
