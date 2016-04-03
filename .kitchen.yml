@@ -10,6 +10,7 @@ platforms:
 
 provisioner:
   name: salt_solo
+  log_level: info
   formula: gocd
   vendor_path: srv/salt
   pillars-from-files:
