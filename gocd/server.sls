@@ -41,6 +41,8 @@ go-server-plugins-external-clean:
     - clean: True
     - watch_in:
       - service: go-server
+    - require:
+      - file: go-server-plugins-external
 
 {% for jar, url in gocd.server.get('plugins', {}).items() %}
 {% set destination = gocd.server.config.SERVER_WORK_DIR + '/plugins/external/' + jar + '.jar' %}
