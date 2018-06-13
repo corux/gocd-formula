@@ -9,6 +9,6 @@ gocd:
       GO_SERVER: 127.0.0.1
 
 java:
-  env: jre7
+  env: jre8
   install:
-    - jre7
+    - jre8
