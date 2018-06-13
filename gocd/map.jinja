@@ -1,7 +1,7 @@
 {% from 'java/map.jinja' import java with context %}
 {% import_yaml 'gocd/defaults.yaml' as default_settings %}
 {% set gocd = salt['pillar.get']('gocd', default=default_settings.get('gocd'), merge=True) %}
-{% set java_env = salt['pillar.get']('java:env', default='jre7') %}
+{% set java_env = salt['pillar.get']('java:env', default='jre8') %}
 
 {% do gocd.server.config.update({
   'JAVA_HOME': java[java_env].home
