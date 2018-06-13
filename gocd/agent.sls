@@ -32,4 +32,4 @@ go-agent-config:
     - mode: 644
     - template: jinja
     - defaults:
-        config: {{ gocd.agent.config }}
+        config: {{ gocd.agent.config|json }}
